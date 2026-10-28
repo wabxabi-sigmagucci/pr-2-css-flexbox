@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Реєстрація на IT-конференцію DevConnect 2026">
+    <title>DevConnect 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        DevConnect <span>2026</span>
+    </a>
+
+    <nav>
+        <a href="#event">Про конференцію</a>
+        <a href="#registration">Напрями</a>
+        <a href="#registration" class="nav-button">Реєстрація</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="hero" id="event">
+        <div class="hero-content">
+            <span class="eyebrow">DEVCONNECT 2026 · IT-КОНФЕРЕНЦІЯ</span>
+            <h1>Build the <span>Future</span></h1>
+            <p>
+                Ідеї, що створюють зміни. Люди, що змінюють індустрію.
+                Долучайся до тих, хто створює технології завтра.
+            </p>
+
+            <div class="event-info">
+                <span>▣ 15 листопада 2026</span>
+                <span>⌖ Київ · UNIT.City</span>
+            </div>
+        </div>
+
+        <div class="atom" aria-hidden="true">
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <div class="atom-core"></div>
+        </div>
+    </section>
+
+    <div class="content">
+
+        <section class="registration-card" id="registration">
+            <div class="heading">
+                <span class="eyebrow purple">РЕЄСТРАЦІЯ УЧАСНИКА</span>
+                <h2>Побачимось на DevConnect!</h2>
+                <p>Заповни форму, щоб забронювати місце.</p>
+            </div>
+
+            <form id="registrationForm" novalidate>
+
+                <div class="field">
+                    <label for="fullName">Повне ім’я *</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Олена Коваленко"
+                        autocomplete="name"
+                        required
+                    >
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="two-columns">
+                    <div class="field">
+                        <label for="email">Електронна пошта *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="olena@gmail.com"
+                            autocomplete="email"
+                            required
+                        >
+                        <small class="error" id="emailError"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="position">Посада *</label>
+                        <input
+                            type="text"
+                            id="position"
+                            name="position"
+                            placeholder="Frontend Developer"
+                            required
+                        >
+                        <small class="error" id="positionError"></small>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="section">Напрям конференції *</label>
+                    <select id="section" name="section" required>
+                        <option value="">Обери напрям</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="AI & Machine Learning">AI & Machine Learning</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                    </select>
+                    <small class="hint">Обери напрям, який тебе цікавить.</small>
+                </div>
+
+                <div class="field">
+                    <label for="attachment">
+                        Аватар або CV <span class="optional">(необов’язково)</span>
+                    </label>
+
+                    <label class="upload-box" for="attachment">
+                        <span class="upload-icon">↑</span>
+                        <span class="upload-text">
+                            <strong id="fileName">Додай файл або натисни тут</strong>
+                            <small>PDF, JPG або PNG · до 5 МБ</small>
+                        </span>
+                        <span class="browse-button">Обрати</span>
+                    </label>
+
+                    <input
+                        type="file"
+                        id="attachment"
+                        name="attachment"
+                        accept=".jpg,.jpeg,.png,.pdf"
+                        class="file-input"
+                    >
+                    <small class="error" id="fileError"></small>
+                </div>
+
+                <div class="consent">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement">
+                        Погоджуюся з <a href="#rules">правилами участі</a>
+                        та <a href="#privacy">політикою конфіденційності</a>.
+                    </label>
+                </div>
+                <small class="error" id="agreementError"></small>
+
+                <button type="submit" class="submit-button">
+                    Зареєструватися <span>→</span>
+                </button>
+
+                <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+                <p class="secure-note">♙ Ваші дані захищені та не передаються третім особам.</p>
+            </form>
+        </section>
+
+        <aside class="benefits-card">
+            <span class="eyebrow purple">ВИГОДИ УЧАСТІ</span>
+            <h2>Один день.<br>Безліч можливостей.</h2>
+
+            <div class="stats">
+                <div><strong>24</strong><small>спікери</small></div>
+                <div><strong>4</strong><small>напрями</small></div>
+                <div><strong>500+</strong><small>учасників</small></div>
+            </div>
+
+            <article class="benefit">
+                <span class="benefit-icon">✧</span>
+                <div>
+                    <h3>Практика від експертів</h3>
+                    <p>Реальні кейси, нові інструменти та практичні ідеї.</p>
+                </div>
+            </article>
+
+            <article class="benefit">
+                <span class="benefit-icon">⌘</span>
+                <div>
+                    <h3>Свої люди. Нові можливості.</h3>
+                    <p>Знайомства з розробниками та дизайнерами.</p>
+                </div>
+            </article>
+
+            <article class="benefit">
+                <span class="benefit-icon">◇</span>
+                <div>
+                    <h3>Знання, які залишаються</h3>
+                    <p>Практичні навички та ідеї для власних проєктів.</p>
+                </div>
+            </article>
+
+            <div class="benefit-footer">◷ 1 день · 09:00–18:00 · Офлайн</div>
+        </aside>
+
+    </div>
+
+    <a class="help-card" href="mailto:hello@devconnect.events">
+        <span class="help-icon">○</span>
+        <span>
+            <strong>Залишилися питання?</strong>
+            <small>Напиши команді DevConnect →</small>
+        </span>
+    </a>
+
+</main>
+
+<footer id="privacy">
+    <span>© 2026 DevConnect. Створюємо майбутнє разом.</span>
+    <a href="mailto:hello@devconnect.events">hello@devconnect.events</a>
+</footer>
+
+</body>
+</html>
